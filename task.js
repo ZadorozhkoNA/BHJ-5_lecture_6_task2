@@ -27,7 +27,7 @@ function createTask( taskStr, list ) {
 
 document.addEventListener( 'submit', ( event ) => {
   event.preventDefault();
-  let value = form.querySelector( '#task__input' ).value;
+  let value = document.getElementById( 'task__input' ).value;
   if ( value !== '') {
     createTask( value, listTasks );
     form.querySelector( '#task__input' ).value ='';
